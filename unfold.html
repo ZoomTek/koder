@@ -1,0 +1,58 @@
+<!DOCTYPE html><head>
+<style>
+div.x {
+  position: relative;padding:0px 10px 10px 0px;
+  width:90%;margin:10px;border:1px solid #ddd;transition:all 0.5s;
+  height:120px;overflow:hidden;margin-left:0px!important;
+  border-radius:2px 2px 8px 2px;font-size:100%;
+}
+
+div.x:after {
+  position: absolute;
+  bottom: 0;height: 80%;width: 100%;left:0;
+  content: "";
+  background: linear-gradient(to top,
+     rgba(255,255,255, 1) 30%, 
+     rgba(255,255,255, 0) 100%
+  );
+  pointer-events: none; 
+} 
+div.x:hover  {
+  	padding-left:10px;
+	cursor:pointer;
+	background: linear-gradient(to top,#e1cb02,#e1cb02);  
+  	color:#fff!important;width:100%;
+	transition:all 0.5s;
+
+	height:auto;
+}
+div.x:hover::after {
+	background:transparent!important;
+  	color:white!important;
+	transition:all 0.5s;
+	
+	} 
+.readmore {display:block;position:absolute;top:70px;
+  z-index:100;left:30px;
+  display:block;font-weight:900!important;
+  font-size:105%;
+  border:2px black solid;
+  padding:4px;
+  transition:all 0.5s;}
+div.x:hover .readmore {
+  	visibility:hidden;
+}
+</style>
+</head>
+<body>
+<div class='x'>
+<span class='readmore'>Read More</span>
+<h2>Dato og tilmelding</h2>
+<p> Whatever  Whatever  Whatever  Whatever  Whatever  Whatever  Whatever  Whatever  Whatever  Whatever  Whatever  Whatever  Whatever  Whatever  Whatever  Whatever  Whatever  Whatever 
+</p>
+<p>More Whatever More Whatever More Whatever More Whatever More Whatever More Whatever More Whatever More Whatever More Whatever More Whatever More Whatever More Whatever More Whatever </p>
+</div>
+
+
+
+</body></html>
